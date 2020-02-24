@@ -1,0 +1,115 @@
+@import "_config";
+@import "_utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%; // keep in container
+}
+
+// Logo
+#logo {
+  width: 70px;
+  height: 70px;
+  // In case its a text
+  font-family: "Lobster", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 300%;
+}
+
+// Header
+#header {
+  // header home
+  &-home {
+    background: #333 $bg-image no-repeat center center / cover;
+    height: 100vh;
+    color: #fff; // text colour
+
+    // header content
+    .header-content {
+      text-align: center;
+      padding-top: 20%;
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+    }
+
+    .container {
+      /* Overlay - container needed */
+      position: absolute;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      right: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+  // header inner
+  &-inner {
+  }
+}
+
+// Main Nav
+#main-nav {
+  display: flex;
+  justify-content: space-between; // logo on one side and the other on the other side
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem; // horizontal  vertical
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+// Cursor
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
