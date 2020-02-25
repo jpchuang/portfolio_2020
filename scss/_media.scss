@@ -14,9 +14,10 @@
   #main-nav {
     flex-direction: column;
     align-items: center;
-
-    li {
-      padding: 1rem;
+    ul {
+      li {
+        padding: 1.5rem 0.8rem;
+      }
     }
   }
 
