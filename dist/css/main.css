@@ -300,8 +300,8 @@ img {
   #main-nav {
     flex-direction: column;
     align-items: center; }
-    #main-nav li {
-      padding: 1rem; }
+    #main-nav ul li {
+      padding: 1.5rem 0.8rem; }
   #header-home .header-content {
     padding-top: 10rem; }
   #header-inner {
