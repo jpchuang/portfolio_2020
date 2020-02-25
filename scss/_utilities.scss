@@ -21,6 +21,8 @@
     @extend %btn-shared;
     color: #333;
     background-color: $main-color;
+    border-radius: 15px;
+    text-transform: uppercase;
   }
   &-light {
     @extend %btn-shared;
